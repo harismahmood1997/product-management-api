@@ -2,9 +2,10 @@
   "name": "node_project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -13,14 +14,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/harismahmood1997/Node_Project/issues"
   },
   "homepage": "https://github.com/harismahmood1997/Node_Project#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongoose": "^9.9.2"
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.2",
+    "multer": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
